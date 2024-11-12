@@ -1,0 +1,21 @@
+/* Sayfanın tüm yüksekliğini kapsayacak şekilde ayarlıyoruz */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100%; /* Root container'ı da tam ekran yapmak için */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Üst kısımdan başlamasını sağlıyoruz */
+  }
+  
+  .App {
+    flex-grow: 1; /* Sayfanın geri kalan kısmını kaplasın */
+    padding-top: 64px; /* AppBar yüksekliği kadar boşluk bırakalım */
+  }
+  
